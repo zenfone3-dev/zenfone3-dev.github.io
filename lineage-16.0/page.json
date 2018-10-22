@@ -1,0 +1,56 @@
+[
+  {
+    "title": "LineageOS-16.0",
+    "latestbuild": "https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/lineage-16.0-20181013-UNOFFICIAL-zenfone3.zip",
+    "changelog": [
+      {
+        "header": [
+          {
+            "title": "Unofficial LineageOS 16.0 Changelog",
+            "content": "for Asus ZenFone3 ZE520KL / ZE552KL"
+          }
+        ],
+        "changes": [
+          {
+            "date": "13 / 10 / 2018",
+            "log": [
+              "Encryption Support",
+              "Vulcan 1.1 api",
+              "SEPolicy bringup",
+              "Exclude serif fonts from builds",
+              "Fix swipe to wake restore on boot",
+              "Use kernel proximity check for gestures"
+            ]
+          },
+          {
+            "date": "08 / 10 / 2018",
+            "log": [
+              "October Security Patch (9.0_r10)",
+              "Fixed Audio issues",
+              "Fixed Battery Stats",
+              "Pie vulkan blobs",
+              "Cleanup duplicated features",
+              "** Thanks to Planet-X",
+              "Removed ASUS debug",
+              "Fixed icon padding in AsusParts"
+            ]
+          },
+          {
+            "date": "06 / 10 / 2018",
+            "log": [
+              "Volte fix (with hacks)",
+              "Support for ExFAT and VFAT filesystems",
+              "Removed ASUS changes to lowmemorykiller"
+            ]
+          },
+          {
+            "date": "29 / 09 / 2018",
+            "log": [
+              "Initial build"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
