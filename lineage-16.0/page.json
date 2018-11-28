@@ -1,7 +1,7 @@
 [
   {
     "title": "LineageOS-16.0",
-    "latestbuild": "https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/lineage-16.0-20181013-UNOFFICIAL-zenfone3.zip",
+    "latestbuild": "https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/lineage-16.0-20181128-UNOFFICIAL-zenfone3.zip",
     "changelog": [
       {
         "header": [
@@ -11,6 +11,13 @@
           }
         ],
         "changes": [
+          {
+            "date": "28 / 11 / 2018",
+            "log": [
+              "Upstream LineageOS changes",
+              "Enabled wifi display"
+            ]
+          },
           {
             "date": "13 / 10 / 2018",
             "log": [
