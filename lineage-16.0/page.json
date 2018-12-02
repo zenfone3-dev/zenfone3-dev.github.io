@@ -1,7 +1,7 @@
 [
   {
     "title": "LineageOS-16.0",
-    "latestbuild": "https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/lineage-16.0-20181128-UNOFFICIAL-zenfone3.zip",
+    "latestbuild": "https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/lineage-16.0-20181202-UNOFFICIAL-zenfone3.zip",
     "changelog": [
       {
         "header": [
@@ -11,6 +11,19 @@
           }
         ],
         "changes": [
+          {
+            "date": "2 / 12 / 2018",
+            "log": [
+              "FM audio Fix",
+              "Memory/Performance optimizations",
+              "CAF HAL Updates",
+              "Rebased kernel on latest CAF tag (LA.UM.7.6.r1-03600-89xx.0)",
+              "** Thanks to Planet-X",
+              "Upstream dts with caf changes",
+              "** Thanks to Lipebs",
+              "Brazilian translations for AsusParts"
+            ]
+          },
           {
             "date": "28 / 11 / 2018",
             "log": [
