@@ -1,0 +1,8 @@
+a.card {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a.card:hover {
+    filter: brightness(90%);
+}

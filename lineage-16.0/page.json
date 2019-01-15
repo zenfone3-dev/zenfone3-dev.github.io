@@ -2,14 +2,14 @@
   {
     "title": "LineageOS-16.0",
     "latestbuild": "https://drive.google.com/file/d/1CEL63vvewB73pNqiL9x8FMzdKyK-gUli/view?usp=drivesdk",
+    "header": [
+      {
+        "title": "Unofficial LineageOS 16.0",
+        "content": "for Asus ZenFone3 ZE520KL / ZE552KL"
+      }
+    ],
     "changelog": [
       {
-        "header": [
-          {
-            "title": "Unofficial LineageOS 16.0 Changelog",
-            "content": "for Asus ZenFone3 ZE520KL / ZE552KL"
-          }
-        ],
         "changes": [
           {
             "date": "2 / 12 / 2018",

@@ -1,4 +1,4 @@
-var DEBUG=1
+var DEBUG=0
 
 var currentURL=window.location.pathname
 
@@ -23,7 +23,7 @@ switch (getFileFromLink(currentURL)) {
         var ch = [];
         var hd = [];
         $.getJSON(getJsonFromLink(currentURL), function(data) {
-            $.each(data[0].changelog[0].header, function(key, val) {
+            $.each(data[0].header, function(key, val) {
                 hd.push( '<h1 class="display-4">' + val.title + '</h1>' );
                 hd.push( '<p class="lead">' + val.content + '</p>' );
             });
@@ -46,6 +46,18 @@ switch (getFileFromLink(currentURL)) {
         $.getJSON(getJsonFromLink(currentURL), function(data) {
             window.location = data[0].latestbuild;
         });
-
+        break;
+    default:
+        var hd = [];
+        $.getJSON(getJsonFromLink(currentURL), function(data) {
+            $.each(data[0].header, function(key, val) {
+                hd.push( '<h1 class="display-4">' + val.title + '</h1>' );
+                hd.push( '<p class="lead">' + val.content + '</p>' );
+            });
+            $("<div/>", {
+                html: hd.join("")
+            }).appendTo("#header");
+        });
+        break;
 }
 
