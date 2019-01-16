@@ -6,3 +6,7 @@ a.card {
 a.card:hover {
     filter: brightness(90%);
 }
+
+.darker {
+    filter: brightness(95%);
+}

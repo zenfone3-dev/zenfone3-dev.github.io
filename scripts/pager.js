@@ -12,6 +12,13 @@ function getFileFromLink(url) {
     return (url.match(/[^.]+(\.[^?#]+)?/) || [])[0];
 }
 
+function EpochToDate(epoch) {
+    if (epoch < 10000000000)
+        epoch *= 1000;
+    var epoch = epoch + (new Date().getTimezoneOffset() * -1);
+    return new Date(epoch).toDateString();
+}
+
 if (DEBUG) {
     console.log('Json: '+ getJsonFromLink(currentURL));
     console.log('FileName: '+ getFileFromLink(currentURL));
@@ -43,8 +50,26 @@ switch (getFileFromLink(currentURL)) {
         });
         break;
     case 'download.html':
-        $.getJSON(getJsonFromLink(currentURL), function(data) {
-            window.location = data[0].latestbuild;
+        var newbuild = [];
+        var oldbuild = [];
+        $.getJSON('https://cors.io/?https://basketbuild.com/api4web/devs/makorn645/lineage-16.0', function(data) {
+            var sz = data['files'].length - 1;
+            newbuild.push( '<h1 class="display-3">Latest Build</h1>' );
+            newbuild.push( '<p class="lead">Filename: '+ data['files'][sz].file +'</p>' );
+            newbuild.push( '<p class="lead">Size: '+ data['files'][sz].filesize +'</p>' );
+            newbuild.push( '<p class="lead">Updated On: '+ EpochToDate(data['files'][sz].fileTimestamp) +'</p>' );
+            newbuild.push( '<a href="https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/'+ data['files'][sz].file +'" class="btn btn-lg btn-primary"><i class="fas fa-download"></i> Download</a>' );
+            $('#latestbuild').html(newbuild.join(""));
+            
+            for(i = (sz - 1); i > 0; i--) {
+                oldbuild.push( '<tr>' );
+                oldbuild.push( '<td scope="row">'+ data['files'][i].file +'</td>' );
+                oldbuild.push( '<td>'+ data['files'][i].filesize +'</td>' );
+                oldbuild.push( '<td>'+ EpochToDate(data['files'][i].fileTimestamp) +'</td>' );
+                oldbuild.push( '<td><a href="https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/'+ data['files'][i].file +'" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a></td>' );
+                oldbuild.push( '</tr>' );
+            }
+            $('#oldbuilds').html(oldbuild.join(""));
         });
         break;
     default:
