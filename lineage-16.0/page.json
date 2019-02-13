@@ -11,6 +11,18 @@
       {
         "changes": [
           {
+            "date": "13 / 02 / 2019",
+            "log": [
+              "Upstream LineageOS changes",
+              "Upstream kernel patches",
+              "Fix USB Tethering",
+              "Migrate LineageHW overlays to binderized TouchHAL",
+              "OTA Support",
+              "Fix screen tearing",
+              "More Performance optimizations"
+            ]
+          },
+          {
             "date": "16 / 01 / 2019",
             "log": [
               "Upstream LineageOS changes",
