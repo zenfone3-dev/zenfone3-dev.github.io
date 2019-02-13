@@ -58,7 +58,7 @@ switch (getFileFromLink(currentURL)) {
             newbuild.push( '<p class="lead">Filename: '+ data['files'][sz].file +'</p>' );
             newbuild.push( '<p class="lead">Size: '+ data['files'][sz].filesize +'</p>' );
             newbuild.push( '<p class="lead">Updated On: '+ EpochToDate(data['files'][sz].fileTimestamp) +'</p>' );
-            newbuild.push( '<a href="https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/'+ data['files'][sz].file +'" class="btn btn-lg btn-primary"><i class="fas fa-download"></i> Download</a>' );
+            newbuild.push( '<a href="https://basketbuild.com/uploads/devs/makorn645/lineage-16.0/'+ data['files'][sz].file +'" class="btn btn-lg btn-light"><i class="fas fa-download"></i> Download</a>' );
             $('#latestbuild').html(newbuild.join(""));
             
             for(i = (sz - 1); i > 0; i--) {

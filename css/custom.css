@@ -10,3 +10,18 @@ a.card:hover {
 .darker {
     filter: brightness(95%);
 }
+
+.card {
+    margin-bottom: 1rem;
+}
+.bg-grad-pb {
+    background: linear-gradient(to bottom right, rgb(103,58,183), rgb(3,169,244));
+}
+
+.bg-grad-tl {
+    background: linear-gradient(to bottom right, rgb(0,191,165), rgb(100,221,23));
+}
+
+.bg-grad-yo {
+    background: linear-gradient(to bottom right, rgb(233,30,99), rgb(156,39,176));
+}
