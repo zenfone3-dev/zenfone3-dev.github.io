@@ -11,6 +11,17 @@
       {
         "changes": [
           {
+            "date": "22 / 02 / 2019",
+            "log": [
+              "Upstream LineageOS changes",
+              "Upstream kernel patches",
+              "Improved boot speed",
+              "Fix inverted glovemode setting",
+              "Fix audio output from headphones using audiofx",
+              "Signed build using private releasekeys"
+            ]
+          },
+          {
             "date": "13 / 02 / 2019",
             "log": [
               "Upstream LineageOS changes",
