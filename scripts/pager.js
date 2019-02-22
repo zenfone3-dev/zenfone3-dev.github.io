@@ -52,7 +52,7 @@ switch (getFileFromLink(currentURL)) {
     case 'download.html':
         var newbuild = [];
         var oldbuild = [];
-        $.getJSON('https://cors.io/?https://basketbuild.com/api4web/devs/makorn645/lineage-16.0', function(data) {
+        $.getJSON('https://cors-anywhere.herokuapp.com/https://basketbuild.com/api4web/devs/makorn645/lineage-16.0', function(data) {
             var sz = data['files'].length - 1;
             newbuild.push( '<h1 class="display-3">Latest Build</h1>' );
             newbuild.push( '<p class="lead">Filename: '+ data['files'][sz].file +'</p>' );
