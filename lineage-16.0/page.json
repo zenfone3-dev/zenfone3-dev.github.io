@@ -7,7 +7,12 @@
         "content": "for Asus ZenFone3 ZE520KL / ZE552KL"
       }
     ],
-    "changelog": [
+    "basketbuild": [
+      {
+      "author": "makorn645",
+      "folder": "lineage-16.0"
+      }
+    ],    "changelog": [
       {
         "changes": [
           {

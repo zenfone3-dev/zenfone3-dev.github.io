@@ -1,0 +1,30 @@
+[
+  {
+    "title": "TWRP",
+    "header": [
+      {
+        "title": "Unofficial TWRP",
+        "content": "for Asus ZenFone3 ZE520KL / ZE552KL"
+      }
+    ],
+    "basketbuild": [
+      {
+      "author": "makorn645",
+      "folder": "twrp"
+      }
+    ],
+    "changelog": [
+      {
+        "changes": [
+          {
+            "date": "25 / 02 / 2019",
+            "log": [
+              "Fix decryption on pie builds",
+              "Fix adb"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
