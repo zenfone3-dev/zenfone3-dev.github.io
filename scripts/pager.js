@@ -61,7 +61,7 @@ switch (getFileFromLink(currentURL)) {
                 newbuild.push( '<p class="lead">Filename: '+ api['files'][sz].file +'</p>' );
                 newbuild.push( '<p class="lead">Size: '+ api['files'][sz].filesize +'</p>' );
                 newbuild.push( '<p class="lead">Updated On: '+ EpochToDate(api['files'][sz].fileTimestamp) +'</p>' );
-                newbuild.push( '<a href="https://basketbuild.com/uploads/devs/' + author + '/' + folder + api['files'][sz].file +'" class="btn btn-lg btn-light"><i class="fas fa-download"></i> Download</a>' );
+                newbuild.push( '<a href="https://basketbuild.com/uploads/devs/' + author + '/' + folder + '/' + api['files'][sz].file +'" class="btn btn-lg btn-light"><i class="fas fa-download"></i> Download</a>' );
                 $('#latestbuild').html(newbuild.join(""));
                 
                 for(i = (sz - 1); i > 0; i--) {
@@ -69,7 +69,7 @@ switch (getFileFromLink(currentURL)) {
                     oldbuild.push( '<td scope="row">'+ api['files'][i].file +'</td>' );
                     oldbuild.push( '<td>'+ api['files'][i].filesize +'</td>' );
                     oldbuild.push( '<td>'+ EpochToDate(api['files'][i].fileTimestamp) +'</td>' );
-                    oldbuild.push( '<td><a href="https://basketbuild.com/uploads/devs/' + author + '/' + folder + api['files'][i].file +'" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a></td>' );
+                    oldbuild.push( '<td><a href="https://basketbuild.com/uploads/devs/' + author + '/' + folder + '/' + api['files'][i].file +'" class="btn btn-sm btn-primary"><i class="fas fa-download"></i> Download</a></td>' );
                     oldbuild.push( '</tr>' );
                 }
                 $('#oldbuilds').html(oldbuild.join(""));
